@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoes Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Shoes Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon" onclick="toggleCart()">🛒 Cart</div>
+  </header>
+
+  <!-- Home -->
+  <section id="home">
+    <h2>Step Into Style</h2>
+    <p>Discover the best collection of trendy shoes</p>
+    <button onclick="scrollToShop()">Shop Now</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2><br>
+    <p>Welcome to <b>Shoes Store</b>, your one-stop destination for stylish and comfortable footwear.<br>
+      We believe shoes are more than just accessories they are a statement of personality and comfort.<br>
+       Our mission is to provide comfort, quality, and trend all in one place.</p>
+  </section>
+
+  <!-- Shop -->
+  <section id="shop">
+    <h2>Shop Now</h2><br><br>
+    <div class="shop-container">
+      <div class="product">
+        <img src="Casual.png" alt="Shoe 1">
+        <h2>Casual Sneaker Shoes</h2><br>
+        <p>₹2999</p>
+        <button onclick="addToCart('Casual Sneakers',2999)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Sports.png" alt="Shoe 2">
+        <h2>Sports Shoes</h2><br>
+        <p>₹2499</p>
+        <button onclick="addToCart('Running Shoes',2499)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Formal.png" alt="Shoe 3">
+        <h2>Formal Shoes</h2><br>
+        <p>₹999</p>
+        <button onclick="addToCart('Formal Shoes',999)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" >
+    <h2>Contact Us</h2> <br>
+    <class="contact-info">
+      <h3>📍 Address:</h3>
+      <p>Ishwar Nagar, kalwa(East)</p>
+      <h3>📞 Phone:</h3>
+      <p>+91 98765 43210</p>
+      <h3>📧 Email:</h3>
+      <p>shoes777@gmail.com</p>
+  </section>
+
+  <!-- Cart -->
+  <div id="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p><b>Total: ₹<span id="total">0</span></b></p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Shoes Store | All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
+
